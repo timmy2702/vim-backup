@@ -35,7 +35,7 @@ set secure
 set backspace=indent,eol,start
 
 " Change colorscheme from default to delek
-colorscheme desert
+colorscheme molokai
 
 " Excute pathogen pathogen path
 execute pathogen#infect()
@@ -82,6 +82,9 @@ filetype plugin on
 let g:NERDSpaceDelims = 1
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code
+" indentation
+let g:NERDDefaultAlign = 'left'
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
@@ -90,3 +93,8 @@ let g:NERDTrimTrailingWhitespace = 1
 " Eclim setting
 let g:EclimFileTypeValidate = 0
 let g:EclimCompletionMethod = 'omnifunc'
+
+" Vim cpp syntax highlighting
+let g:cpp_class_scope_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+let c_no_curly_error = 1
