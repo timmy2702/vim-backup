@@ -35,7 +35,7 @@ set secure
 set backspace=indent,eol,start
 
 " Change colorscheme from default to delek
-colorscheme molokai
+colorscheme iceberg
 
 " Excute pathogen pathogen path
 execute pathogen#infect()
@@ -57,6 +57,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 let g:ycm_show_diagnostics_ui = 0
+set pumheight=5
 
 " Syntastic setting
 set statusline+=%#warningmsg#
