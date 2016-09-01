@@ -108,13 +108,6 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 let c_no_curly_error = 1
 
-" Vim-easytags setting
-let g:easytags_events = ['BufWritePost']
-let g:easytags_dynamic_files = 1
-let g:easytags_syntax_keyword = 'always'
-let g:easytags_auto_highlight = 0
-let g:easytags_by_filetype = '~/.local/vim/tags/filetypes'
-
 " Vim tags setting
 set tags=./tags;/
 set tags+=~/.vim/tags/boost

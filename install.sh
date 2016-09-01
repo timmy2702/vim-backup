@@ -41,11 +41,8 @@ git clone https://github.com/octol/vim-cpp-enhanced-highlight.git
 git clone https://github.com/flazz/vim-colorschemes.git
 cp vim-colorschemes/colors/* ~/.vim/colors
 
-# Install vim-easytags
-git clone https://github.com/xolox/vim-easytags.git
-
-# Install vim-misc
-git clone https://github.com/xolox/vim-misc.git
+# Install vim-autotag
+git clone git://github.com/craigemery/vim-autotag.git
 
 # Install youcompleteme
 git clone https://github.com/Valloric/YouCompleteMe.git
