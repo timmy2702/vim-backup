@@ -48,15 +48,17 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let NERDTreeShowHidden = 1
 
 " YCM (YouCompleteMe) setting
-let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_collect_identifiers_from_tags_files = 0
 let g:ycm_use_ultisnips_completer = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_complete_in_comments = 1
 let g:ycm_complete_in_strings = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 let g:ycm_show_diagnostics_ui = 0
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_disable_for_files_larger_than_kb = 0
 set pumheight=5
 
 " Syntastic setting
@@ -106,9 +108,13 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 let c_no_curly_error = 1
 
-
 " Vim-easytags setting
+let g:easytags_events = ['BufWritePost']
 let g:easytags_dynamic_files = 1
 let g:easytags_syntax_keyword = 'always'
 let g:easytags_auto_highlight = 0
 let g:easytags_by_filetype = '~/.local/vim/tags/filetypes'
+
+" Vim tags setting
+set tags=./tags;/
+set tags+=~/.vim/tags/boost

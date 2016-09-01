@@ -1,14 +1,20 @@
 # Remove everything in ~/.vim
 rm -dRI ~/.vim
 mkdir -p ~/.vim
+mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors ~/.vim/tags
 
 # Copy the configs
 cp .vimrc ~
 cp .ctags ~
+cp .ycm_extra_conf.py ~
 
 # Install Pathogen
-mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors && \
-    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+# Install boost tags
+sudo apt-file update
+apt-file list boost | grep -E -o '/usr/include/.*\.(h|hpp)' | grep -v '/usr/include/boost/typeof/' > ~/.vim/tags/boost-filelist
+ctags --sort=foldcase --c++-kinds=+p --fields=+iaS --extra=+q -f ~/.vim/tags/boost -L ~/.vim/tags/boost-filelist
 
 # Install plugings
 cd ~/.vim/bundle
