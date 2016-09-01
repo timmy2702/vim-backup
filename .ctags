@@ -1,5 +1,4 @@
-# Basic options
 --recurse=yes
---fields=+l
 --tag-relative=yes
 --exclude=.git
+--fields=+l

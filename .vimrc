@@ -103,3 +103,6 @@ let g:EclimCompletionMethod = 'omnifunc'
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 let c_no_curly_error = 1
+
+" Vim-easytags setting
+let g:easytags_dynamic_files = 1
