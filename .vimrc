@@ -75,7 +75,8 @@ let g:syntastic_cpp_auto_refresh_includes = 1
 let g:syntastic_cpp_include_dirs = [
     \'includes', 'headers', 'include', 'header',
     \'build/ext/gtest/src/googletest/googletest/include',
-    \'build/lib/gtest/src/googletest/googletest/include'
+    \'build/lib/gtest/src/googletest/googletest/include',
+    \'/usr/include'
     \]
 let g:syntastic_cpp_remove_include_errors = 1
 let g:syntastic_cpp_compiler = 'g++'
@@ -105,5 +106,9 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 let c_no_curly_error = 1
 
+
 " Vim-easytags setting
 let g:easytags_dynamic_files = 1
+let g:easytags_syntax_keyword = 'always'
+let g:easytags_auto_highlight = 0
+let g:easytags_by_filetype = '~/.local/vim/tags/filetypes'
