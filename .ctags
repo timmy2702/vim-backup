@@ -23,3 +23,10 @@
 --exclude=tags
 --exclude=cscope.\*
 --exclude=\*.tar.\*
+--exclude=\*cmake\*
+--exclude=\*make\*
+--exclude=\*CMake\*
+--exclude=.gitignore
+--exclude=.syntastic_cpp_config
+--exclude=\*.md
+--exclude=\*.sh
