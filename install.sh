@@ -1,5 +1,5 @@
 # Remove everything in ~/.vim
-rm -dRI ~/.vim
+rm -drf ~/.vim
 mkdir -p ~/.vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors ~/.vim/tags
 
@@ -12,6 +12,7 @@ cp .ycm_extra_conf.py ~
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # Install boost tags
+sudo apt install apt-file
 sudo apt-file update
 apt-file list boost | grep -E -o '/usr/include/.*\.(h|hpp)' | grep -v '/usr/include/boost/typeof/' > ~/.vim/tags/boost-filelist
 ctags --sort=foldcase --c++-kinds=+p --fields=+iaS --extra=+q -f ~/.vim/tags/boost -L ~/.vim/tags/boost-filelist
