@@ -111,3 +111,6 @@ let c_no_curly_error = 1
 " Vim tags setting
 set tags=./tags;/
 set tags+=~/.vim/tags/boost
+
+" indent 2 spaces for html files
+autocmd FileType html setlocal ts=2 sw=2 expandtab
