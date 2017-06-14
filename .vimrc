@@ -114,3 +114,6 @@ set tags+=~/.vim/tags/boost
 
 " indent 2 spaces for html files
 autocmd FileType html setlocal ts=2 sw=2 expandtab
+
+" set copy to clipboard
+set clipboard=unnamedplus
