@@ -112,8 +112,9 @@ let c_no_curly_error = 1
 set tags=./tags;/
 set tags+=~/.vim/tags/boost
 
-" indent 2 spaces for html files
+" indent 2 spaces for .html & .sh files
 autocmd FileType html setlocal ts=2 sw=2 expandtab
+autocmd FileType sh setlocal ts=2 sw=2 expandtab
 
 " set copy to clipboard
 set clipboard=unnamedplus
