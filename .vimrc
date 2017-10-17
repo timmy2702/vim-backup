@@ -3,13 +3,13 @@ filetype indent on
 set autoindent
 syntax on
 
-" show existing tab with 4 spaces width
-set tabstop=4
+" show existing tab with 2 spaces width
+set tabstop=2
 
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
 
-" On pressing tab, insert 4 spaces
+" On pressing tab, insert 2 spaces
 set expandtab
 
 " Turn on line numbering. Turn it off with "set nonu" 
@@ -35,7 +35,7 @@ set secure
 set backspace=indent,eol,start
 
 " Change colorscheme from default to delek
-colorscheme iceberg
+colorscheme molokai_dark
 
 " Excute pathogen pathogen path
 execute pathogen#infect()
@@ -112,9 +112,8 @@ let c_no_curly_error = 1
 set tags=./tags;/
 set tags+=~/.vim/tags/boost
 
-" indent 2 spaces for .html & .sh files
-autocmd FileType html setlocal ts=2 sw=2 expandtab
-autocmd FileType sh setlocal ts=2 sw=2 expandtab
+" indent 4 spaces for .py files 
+autocmd FileType py setlocal ts=4 sw=4 expandtab
 
 " set copy to clipboard
 set clipboard=unnamedplus
