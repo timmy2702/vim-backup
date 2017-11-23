@@ -87,6 +87,7 @@ let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 
 " NerdCommenter setting
 filetype plugin on
+autocmd BufWinEnter * NERDTreeMirror
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 " Use compact syntax for prettified multi-line comments
