@@ -46,6 +46,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeShowHidden = 1
+let NERDTreeShowLineNumbers = 1
 
 " YCM (YouCompleteMe) setting
 let g:ycm_collect_identifiers_from_tags_files = 0
@@ -118,3 +119,6 @@ autocmd FileType py setlocal ts=4 sw=4 expandtab
 
 " set copy to clipboard
 set clipboard=unnamedplus
+
+" set hybrid line number
+set number relativenumber
