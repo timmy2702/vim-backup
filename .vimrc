@@ -122,3 +122,6 @@ set clipboard=unnamedplus
 
 " set hybrid line number
 set number relativenumber
+
+" set split on the right
+set splitright
