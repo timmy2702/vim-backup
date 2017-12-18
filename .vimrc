@@ -92,9 +92,10 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Wextra -Wpedantic'
 let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 
 " UltiSnips setting
+" set runtimepath+=~/.vim/my-snippets/
 let g:UltiSnipsEditSplit = "horizontal"
-let g:UltiSnipsSnippetsDir = ["~/.vim/my-snippets"] 
-let g:UltiSnipsSnippetDirectories = ["~/.vim/my-snippets"]
+let g:UltiSnipsSnippetsDir="~/.vim/my-snippets"
+let g:UltiSnipsSnippetDirectories = ['my-snippets']
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
