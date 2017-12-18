@@ -1,7 +1,11 @@
 # Remove everything in ~/.vim
 rm -drf ~/.vim
 mkdir -p ~/.vim
-mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors ~/.vim/tags
+mkdir -p ~/.vim/autoload 
+mkdir -p ~/.vim/bundle 
+mkdir -p ~/.vim/colors 
+mkdir -p ~/.vim/tags
+mkdir -p ~/.vim/my-snippets
 
 # Copy the configs
 cp .vimrc ~
