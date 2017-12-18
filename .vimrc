@@ -49,7 +49,7 @@ let NERDTreeShowHidden = 1
 let NERDTreeShowLineNumbers = 1
 
 " YCM (YouCompleteMe) setting
-let g:ycm_collect_identifiers_from_tags_files = 0
+let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_use_ultisnips_completer = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_complete_in_comments = 1
@@ -85,6 +85,9 @@ let g:syntastic_cpp_remove_include_errors = 1
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Wextra -Wpedantic'
 let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
+
+" autotag setting
+let g:autotagTagsFile="tags"
 
 " NerdCommenter setting
 filetype plugin on

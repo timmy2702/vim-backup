@@ -50,3 +50,6 @@ git clone https://github.com/Valloric/YouCompleteMe.git
 cd YouCompleteMe
 git submodule update --init --recursive
 ./install.py --all
+
+# Install ultisnips
+git clone https://github.com/SirVer/ultisnips.git
