@@ -42,9 +42,6 @@ git clone https://github.com/octol/vim-cpp-enhanced-highlight.git
 git clone https://github.com/flazz/vim-colorschemes.git
 cp vim-colorschemes/colors/* ~/.vim/colors
 
-# Install vim-autotag
-git clone git://github.com/craigemery/vim-autotag.git
-
 # Install youcompleteme
 git clone https://github.com/Valloric/YouCompleteMe.git
 cd YouCompleteMe
@@ -53,3 +50,6 @@ git submodule update --init --recursive
 
 # Install ultisnips
 git clone https://github.com/SirVer/ultisnips.git
+
+# Install vim-snippets
+git clone git://github.com/honza/vim-snippets.git
