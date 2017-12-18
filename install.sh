@@ -56,5 +56,3 @@ git submodule update --init --recursive
 # Install ultisnips
 git clone https://github.com/SirVer/ultisnips.git
 
-# Install vim-snippets
-git clone git://github.com/honza/vim-snippets.git

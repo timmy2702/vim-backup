@@ -1,4 +1,27 @@
-extends c
+# main
+snippet main
+	int main(int argc, const char* argv[]) {
+		${0}
+		return 0;
+	}
+
+# #include <...>
+snippet inc<
+	#include <${1:iostream}>
+
+# #include "..."
+snippet inc"
+	#include "${1:`vim_snippets#Filename("$1.h")`}"
+
+# ifndef...define...endif
+snippet ifndef
+	#ifndef ${1:_CLASS_H_} 
+	#define $1
+
+	${0}
+
+	#endif /* ifndef $1 */
+
 
 ##
 ## Preprocessor

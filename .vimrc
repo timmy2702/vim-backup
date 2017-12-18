@@ -52,7 +52,7 @@ let NERDTreeShowHidden = 1
 let NERDTreeShowLineNumbers = 1
 
 " YCM (YouCompleteMe) setting
-let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_collect_identifiers_from_tags_files = 0
 let g:ycm_use_ultisnips_completer = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_complete_in_comments = 1
@@ -93,6 +93,7 @@ let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 
 " UltiSnips setting
 let g:UltiSnipsEditSplit = "horizontal"
+let g:UltiSnipsSnippetsDir = ["~/.vim/my-snippets"] 
 let g:UltiSnipsSnippetDirectories = ["~/.vim/my-snippets"]
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
