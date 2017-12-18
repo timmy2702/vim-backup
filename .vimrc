@@ -31,6 +31,9 @@ set lbr
 set exrc
 set secure
 
+" set current working directory
+set autochdir
+
 " Fix backspace for vim
 set backspace=indent,eol,start
 
@@ -60,6 +63,8 @@ let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_disable_for_files_larger_than_kb = 0
+let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 set pumheight=5
 
 " Syntastic setting
@@ -86,8 +91,12 @@ let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Wextra -Wpedantic'
 let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 
-" autotag setting
-let g:autotagTagsFile="tags"
+" UltiSnips setting
+let g:UltiSnipsEditSplit = "horizontal"
+let g:UltiSnipsSnippetDirectories = ["~/.vim/my-snippets"]
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 " NerdCommenter setting
 filetype plugin on
@@ -114,8 +123,10 @@ let g:cpp_experimental_template_highlight = 1
 let c_no_curly_error = 1
 
 " Vim tags setting
-set tags=./tags;/
-set tags+=~/.vim/tags/boost
+set tags=./tags,tags;
+" DO NOT set tags+=~/.vim/tags/boost
+" instead, use :set when needed cause ycm takes
+" a lot of memory to read big ctags
 
 " indent 4 spaces for .py files 
 autocmd FileType py setlocal ts=4 sw=4 expandtab

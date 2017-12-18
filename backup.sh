@@ -2,3 +2,7 @@
 cp ~/.vimrc .
 cp ~/.ctags .
 cp ~/.ycm_extra_conf.py .
+
+# copy my snippets
+mkdir -p my-snippets
+cp -r ~/.vim/my-snippets .
