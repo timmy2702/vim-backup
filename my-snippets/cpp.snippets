@@ -198,3 +198,13 @@ try {
 
 }
 endsnippet
+
+# unique pointer
+snippet uptr
+std::unique_ptr<{$1:T}> ${0}
+endsnippet
+
+# shared pointer
+snippet sptr
+std::shared_ptr<{$1:T}> ${0}
+endsnippet
