@@ -82,8 +82,6 @@ let g:syntastic_cpp_no_default_include_dirs = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
 let g:syntastic_cpp_include_dirs = [
     \'includes', 'headers', 'include', 'header',
-    \'build/ext/gtest/src/googletest/googletest/include',
-    \'build/lib/gtest/src/googletest/googletest/include',
     \'/usr/include'
     \]
 let g:syntastic_cpp_remove_include_errors = 1

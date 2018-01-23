@@ -9,13 +9,11 @@ endsnippet
 # #include <...>
 snippet inc<
 #include <${1:iostream}>
-${0}
 endsnippet
 
 # #include "..."
 snippet inc"
 #include "${1:Example.h}"
-${0}
 endsnippet
 
 # ifndef...define...endif
@@ -138,15 +136,15 @@ snippet class
 /** 
  * ${5:Detailed description}
  */
-class ${1:ExampleClass} {
+class ${1:ExampleClass} ${2:: public BaseClass} {
 	public:
-		$1(${2});
+		$1(${3});
 		virtual ~$1();
 
 		${0}
 
 	private:
-		${3}	
+		${4}	
 };
 endsnippet
 
@@ -159,14 +157,12 @@ endsnippet
 
 # std::cout
 snippet cout
-std::cout << ${1} << std::endl;
-${0}
+std::cout << ${0} << std::endl;
 endsnippet
 
 # std::cin
 snippet cin
-std::cin >> ${1};
-${0}
+std::cin >> ${0};
 endsnippet
 
 # for loop
@@ -214,4 +210,28 @@ snippet cmt
 /**
  * ${1:comment}
  */
+endsnippet
+
+# getter declaration
+snippet getdec
+${1:const std::string&} ${2:getStr}(${3}) ${4:const};
+endsnippet
+
+# setter declaration
+snippet setdec
+${1:void} ${2:setStr}(${3:const std::string& str});
+endsnippet
+
+# getter definition
+snippet getdef
+${1:const std::string&} ${2:ExampleClass}::${3:getStr}(${4}) ${5:const} {
+	${0}
+}
+endsnippet
+
+# setter definition
+snippet setdef
+${1:void} ${2:ExampleClass}::${3:setStr}(${4:const std::string& str}) {
+	${0}
+)
 endsnippet
