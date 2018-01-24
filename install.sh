@@ -18,7 +18,7 @@ cp -r my-snippets ~/.vim
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # Install boost tags
-sudo apt install apt-file libboost-dev
+sudo apt install -y apt-file libboost-dev
 sudo apt-file update
 apt-file list boost | grep -E -o '/usr/include/.*\.(h|hpp)' | grep -v '/usr/include/boost/typeof/' > ~/.vim/tags/boost-filelist
 ctags --c++-kinds=+p --fields=+l --extra=+f --language-force=C++ -f ~/.vim/tags/boost -L ~/.vim/tags/boost-filelist
