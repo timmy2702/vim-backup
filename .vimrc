@@ -85,8 +85,8 @@ let g:syntastic_cpp_include_dirs = [
     \'/usr/include'
     \]
 let g:syntastic_cpp_remove_include_errors = 1
-let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Wextra -Wpedantic'
+let g:syntastic_cpp_compiler = '/usr/bin/g++-7'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Wextra -Wpedantic -Wno-deprecated-declarrations -Wno-reorder'
 let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 
 " UltiSnips setting
