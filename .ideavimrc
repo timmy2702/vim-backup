@@ -1,0 +1,48 @@
+" Indent automatically depending on filetype
+filetype indent on
+set autoindent
+syntax on
+
+" Turn on line numbering. Turn it off with "set nonu" 
+set number
+
+" Set syntax on
+syntax enable
+
+" Case insensitive search
+set ic
+
+" Higlhight search
+set hls
+
+" Increment search
+set is
+
+" Wrap text instead of being on one line
+set lbr
+
+" Force Vim to source .vimrc file in working directory
+set exrc
+set secure
+
+" set current working directory
+set autochdir
+
+" Fix backspace for vim
+set backspace=indent,eol,start
+
+" Vim tags setting
+set tags=./tags,tags;
+
+" set copy to clipboard
+if has('macunix') || has('win64')
+  set clipboard=unnamed
+else
+  set clipboard=unnamedplus
+endif
+
+" set hybrid line number
+set number relativenumber
+
+" set split on the right
+set splitright
