@@ -24,6 +24,9 @@ set ic
 " Higlhight search
 set hls
 
+" Increment search
+set is
+
 " Wrap text instead of being on one line
 set lbr
 
@@ -83,9 +86,9 @@ let g:syntastic_cpp_no_include_search = 1
 let g:syntastic_cpp_no_default_include_dirs = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
 let g:syntastic_cpp_include_dirs = [
-    \'includes', 'headers', 'include', 'header',
-    \'/usr/include'
-    \]
+      \'includes', 'headers', 'include', 'header',
+      \'/usr/include'
+      \]
 let g:syntastic_cpp_remove_include_errors = 1
 let g:syntastic_cpp_compiler = '/usr/bin/g++-7'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Wextra -Wpedantic -Wno-deprecated-declarrations -Wno-reorder'
@@ -134,7 +137,11 @@ set tags=./tags,tags;
 autocmd FileType py setlocal ts=4 sw=4 expandtab
 
 " set copy to clipboard
-set clipboard=unnamedplus
+if has('macunix') || has('win64')
+  set clipboard=unnamed
+else
+  set clipboard=unnamedplus
+endif
 
 " set hybrid line number
 set number relativenumber
