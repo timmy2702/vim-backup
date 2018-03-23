@@ -2,6 +2,7 @@
 cp ~/.vimrc .
 cp ~/.ctags .
 cp ~/.ycm_extra_conf.py .
+cp ~/.ideavimrc .
 
 # copy my snippets
 rm -drf my-snippets

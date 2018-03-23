@@ -10,6 +10,7 @@ mkdir -p ~/.vim/tags
 cp .vimrc ~
 cp .ctags ~
 cp .ycm_extra_conf.py ~
+cp .ideavimrc ~
 
 # Copy my snippets
 cp -r my-snippets ~/.vim
