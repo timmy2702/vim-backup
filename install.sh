@@ -59,3 +59,5 @@ cd ..
 # Install ultisnips
 git clone https://github.com/SirVer/ultisnips.git
 
+# Install python-mode
+git clone --recursive https://github.com/python-mode/python-mode.git
