@@ -105,6 +105,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 " Pymode setting
 let g:pymode_lint_on_write = 0
+let g:pymode_rope_completion = 0
 
 " NerdCommenter setting
 filetype plugin on
@@ -120,6 +121,7 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+let g:NERDTreeIgnore = ['\.pyc$', '__pycache__$']
 
 " Eclim setting
 let g:EclimFileTypeValidate = 0
