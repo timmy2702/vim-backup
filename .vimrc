@@ -106,6 +106,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 " Pymode setting
 let g:pymode_lint_on_write = 0
 let g:pymode_rope_completion = 0
+let g:pymode_folding = 0
 
 " NerdCommenter setting
 filetype plugin on
