@@ -93,6 +93,7 @@ let g:syntastic_cpp_remove_include_errors = 1
 let g:syntastic_cpp_compiler = '/usr/bin/g++-7'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Wextra -Wpedantic -Wno-deprecated-declarrations -Wno-reorder'
 let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
+let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
 
 " UltiSnips setting
 " set runtimepath+=~/.vim/my-snippets/
@@ -104,7 +105,8 @@ let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 " Pymode setting
-let g:pymode_lint_on_write = 0
+let g:pymode_lint_on_write = 1
+let g:pymode_lint_unmodified = 1
 let g:pymode_rope_completion = 0
 let g:pymode_folding = 0
 
