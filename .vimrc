@@ -109,6 +109,8 @@ let g:pymode_lint_on_write = 1
 let g:pymode_lint_unmodified = 1
 let g:pymode_rope_completion = 0
 let g:pymode_folding = 0
+let g:pymode_lint_ignore = ["E501", "W0401"]
+let g:pymode_python = 'python3'
 
 " NerdCommenter setting
 filetype plugin on
