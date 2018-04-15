@@ -27,9 +27,6 @@ ctags --c++-kinds=+p --fields=+l --extra=+f --language-force=C++ -f ~/.vim/tags/
 # Install plugings
 cd ~/.vim/bundle
 
-# Install image.vim
-git clone https://github.com/ashisha/image.vim.git
-
 # Install nerdcommenter
 git clone https://github.com/scrooloose/nerdcommenter.git
 
